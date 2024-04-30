@@ -48,7 +48,6 @@ def palindrome_checker():
 
 
 def convert_to_words():
-    
     while True:
         print("")
         try:
@@ -67,20 +66,31 @@ def convert_to_words():
 
 
 
-
+def countdown():
+    def alarm(minutes):
+        seconds = minutes * 60 # Changes time to seconds
+        time.sleep(seconds) # starts countdown
+        winsound.PlaySound("alarm.wav", winsound.SND_FILENAME) # Next  line  after countdown plays the sound with  winsound
+        print("Time's Up!")
+    
     
 
+    while True:
+        try:
+            print("Enter the time for the alarm in minutes:")
+            time_input = int(input())
+            print(f"Alarm set for {time_input} minutes.")
+            alarm(time_input)
+        except ValueError:
+            print("Please enter a valid number of minutes.")
 
-def countdown():
-    print("")
-
-
+    
 
 def goHome():
     print("")
     
     while True:
-        decision = input("Homepage-'0' | Exit-'x' : ")
+        decision = input("Home-'0' | Exit-'x' : ")
         print("")
 
         match decision:
@@ -94,4 +104,4 @@ def goHome():
                 print("Enter either '0 - Home' or 'x - Exit'")
 
 
-convert_to_words()
+start()
