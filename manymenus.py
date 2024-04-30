@@ -2,8 +2,14 @@
 import inflect 
 # Imports library for number conversion
 
+import time
+# Imports time for countdown 
+
+import winsound
+# Imports sound at the end of the countdown
+
 def start():
-    print("MANY GAMES")
+    print("Many Menus")
     print(f"\t1. Palindrome Checker\n\t2. Convert Number to Words\n\t3. Alarm\n\tx. Exit")
 
     while True:
