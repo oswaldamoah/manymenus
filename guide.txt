@@ -1,4 +1,4 @@
-COmmand line application with menus
+Command line application with menus
 1. Palindrome checker - when user inputs word, you tell them whether it's a palindrome
 2. User inputs number and convert to words
 3. User inputs time and you countdown and play a sound at the end
